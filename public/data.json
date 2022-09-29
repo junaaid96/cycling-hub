@@ -1,0 +1,38 @@
+[
+    {
+        "id": "6335c3051bdf450057af59b9",
+        "image": "https://as01.epimg.net/deportes_accion/imagenes/2020/02/17/reportajes/1581954305_702109_1581955981_noticiareportajes_grande.jpg",
+        "name": "Mountain Biking",
+        "time": 60
+    },
+    {
+        "id": "6335c30518f2e67db61124e4",
+        "image": "https://www.outsideonline.com/wp-content/uploads/2020/11/19/cyclist-lens-flare_h.jpg",
+        "name": "Practicing",
+        "time": 120
+    },
+    {
+        "id": "6335c305f7594e0f673f6ac8",
+        "image": "https://www.siroko.com/blog/c/app/uploads/2021/07/efectos-positivos_f766ef96-0811-452d-bbf8-ec38d244637a-1440x900.jpg",
+        "name": "Road Bike Racing",
+        "time": 200
+    },
+    {
+        "id": "6335c305f4af7fcea6089ba5",
+        "image": "https://images.unsplash.com/photo-1511994298241-608e28f14fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHw%3D&w=1000&q=80",
+        "name": "Exploring Gear",
+        "time": 100
+    },
+    {
+        "id": "6335c305f0f10e096eb66d60",
+        "image": "https://img.redbull.com/images/c_crop,x_0,y_0,h_2648,w_3972/c_fill,w_1500,h_1000/q_auto,f_auto/redbullcom/2018/06/28/6f0dc1fa-8603-45a6-8cc0-e6cfcb2318dd/mtb-val-di-sole-golden-eagle-trail",
+        "name": "Random Ride",
+        "time": 300
+    },
+    {
+        "id": "6335c30584ff55e87af2e528",
+        "image": "https://s3.amazonaws.com/usac-craft-uploads-production/assets/Road-Header_200611_104055.jpg",
+        "name": "Road Bike Event",
+        "time": 500
+    }
+]

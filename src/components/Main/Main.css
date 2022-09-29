@@ -1,0 +1,21 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: azure
+}
+
+.title {
+    text-align: center;
+}
+
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-container {
+    background-color: white;
+    padding: 20px;
+}
