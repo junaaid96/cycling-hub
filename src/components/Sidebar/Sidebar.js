@@ -5,7 +5,7 @@ const Sidebar = () => {
     return (
         <div>
             <div className='user'>
-                <img src="avatar.png" alt="avatar"/>
+                <img src="avatar.png" alt="avatar" />
                 <div>
                     <h3>Md. Junaidul Islam</h3>
                     <p>Chittagong, Bangladesh</p>
@@ -17,7 +17,7 @@ const Sidebar = () => {
                     <p>Weight</p>
                 </div>
                 <div>
-                    <p><span className='text'>70</span>"</p>
+                    <p><span className='text'>6.10</span>"</p>
                     <p>Height</p>
                 </div>
                 <div>
@@ -25,7 +25,24 @@ const Sidebar = () => {
                     <p>Age</p>
                 </div>
             </div>
-           
+            <h4>Add A Break</h4>
+            <div className='break'>
+                <div>
+                    <p className='break-time'>5m</p>
+                </div>
+                <div>
+                    <p className='break-time'>10m</p>
+                </div>
+                <div>
+                    <p className='break-time'>15m</p>
+                </div>
+                <div>
+                    <p className='break-time'>20m</p>
+                </div>
+                <div>
+                    <p className='break-time'>30m</p>
+                </div>
+            </div>
         </div>
     );
 };
