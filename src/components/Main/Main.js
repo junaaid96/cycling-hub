@@ -5,10 +5,16 @@ import './Main.css';
 
 const Main = () => {
     const [activities, setActivities] = useState([]);
+    const [list, setList] = useState([]);
 
     useEffect(() => {
         fetch('data.json').then(res => res.json()).then(data => setActivities(data))
     }, [])
+
+    const handleAddToList = activity => {
+        const updatedList = [...list, activity];
+        setList(updatedList);
+    }
 
     return (
         <div className="main-container">
@@ -20,12 +26,16 @@ const Main = () => {
                 <h4>Select your desired cycling event...</h4>
                 <div className="activities-container">
                     {activities.map((activity) => (
-                        <Activity key={activity.id} activity={activity}></Activity>
+                        <Activity 
+                        key={activity.id} 
+                        activity={activity}
+                        handleAddToList={handleAddToList}
+                        ></Activity>
                     ))}
                 </div>
             </div>
             <div className="sidebar-container">
-                <Sidebar></Sidebar>
+                <Sidebar list={list}></Sidebar>
             </div>
         </div>
     );

@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({list}) => {
+    let time = 0;
+    const [breakTime, setBreakTime] = useState(0);
+
+    const setBreakTimeToList = (bTime) => {
+        setBreakTime(bTime);
+    }
+
+    for(const activity of list){
+        time = time + activity.time;
+    }
+
     return (
         <div>
             <div className='user'>
@@ -28,30 +39,34 @@ const Sidebar = () => {
             <h4>Add A Break</h4>
             <div className='common-style'>
                 <div>
-                    <p className='break-time'>5m</p>
+                    <p onClick={()=>setBreakTimeToList(5)} className='break-time'>5m</p>
                 </div>
                 <div>
-                    <p className='break-time'>10m</p>
+                    <p onClick={()=>setBreakTimeToList(10)} className='break-time'>10m</p>
                 </div>
                 <div>
-                    <p className='break-time'>15m</p>
+                    <p onClick={()=>setBreakTimeToList(15)} className='break-time'>15m</p>
                 </div>
                 <div>
-                    <p className='break-time'>20m</p>
+                    <p onClick={()=>setBreakTimeToList(20)} className='break-time'>20m</p>
                 </div>
                 <div>
-                    <p className='break-time'>30m</p>
+                    <p onClick={()=>setBreakTimeToList(30)} className='break-time'>30m</p>
                 </div>
             </div>
             <h4>Activity Details</h4>
             <div className='common-style'>
                 <h4>Cycling Time</h4>
-                <p>0</p>
+                <p>{time}m</p>
             </div>
             <div className='common-style'>
                 <h4>Break Time</h4>
-                <p>0</p>
+                <p>{breakTime}m</p>
             </div>
+
+            <button className='completed-btn'>
+                <p>Completed</p>
+            </button>
         </div>
     );
 };
