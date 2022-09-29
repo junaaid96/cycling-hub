@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Sidebar = ({list}) => {
+const Sidebar = ({ list }) => {
+    const notify = () => toast("You Have Completed an Event!");
     let time = 0;
     const [breakTime, setBreakTime] = useState(0);
 
@@ -9,7 +12,7 @@ const Sidebar = ({list}) => {
         setBreakTime(bTime);
     }
 
-    for(const activity of list){
+    for (const activity of list) {
         time = time + activity.time;
     }
 
@@ -39,19 +42,19 @@ const Sidebar = ({list}) => {
             <h4>Add A Break</h4>
             <div className='common-style'>
                 <div>
-                    <p onClick={()=>setBreakTimeToList(5)} className='break-time'>5m</p>
+                    <p onClick={() => setBreakTimeToList(5)} className='break-time'>5m</p>
                 </div>
                 <div>
-                    <p onClick={()=>setBreakTimeToList(10)} className='break-time'>10m</p>
+                    <p onClick={() => setBreakTimeToList(10)} className='break-time'>10m</p>
                 </div>
                 <div>
-                    <p onClick={()=>setBreakTimeToList(15)} className='break-time'>15m</p>
+                    <p onClick={() => setBreakTimeToList(15)} className='break-time'>15m</p>
                 </div>
                 <div>
-                    <p onClick={()=>setBreakTimeToList(20)} className='break-time'>20m</p>
+                    <p onClick={() => setBreakTimeToList(20)} className='break-time'>20m</p>
                 </div>
                 <div>
-                    <p onClick={()=>setBreakTimeToList(30)} className='break-time'>30m</p>
+                    <p onClick={() => setBreakTimeToList(30)} className='break-time'>30m</p>
                 </div>
             </div>
             <h4>Activity Details</h4>
@@ -64,8 +67,19 @@ const Sidebar = ({list}) => {
                 <p>{breakTime}m</p>
             </div>
 
-            <button className='completed-btn'>
+            <button onClick={notify} className='completed-btn'>
                 <p>Completed</p>
+                <ToastContainer
+                    position="top-center"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                />
             </button>
         </div>
     );
