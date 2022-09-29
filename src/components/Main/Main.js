@@ -12,12 +12,12 @@ const Main = () => {
 
     return (
         <div className="main-container">
-            <div className='title-info'>
+            <div className='title-part'>
                 <div className='title'>
                 <img src="logo.png" alt="logo" width={100}/>
                 <h1>Cycling Hub</h1>
                 </div>
-                <h3>Select any activity</h3>
+                <h4>Select your desired cycling event...</h4>
                 <div className="activities-container">
                     {activities.map((activity) => (
                         <Activity key={activity.id} activity={activity}></Activity>

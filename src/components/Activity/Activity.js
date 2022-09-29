@@ -7,7 +7,7 @@ const Activity = ({activity}) => {
         <div className='activity'>
             <img src={image} alt="activity-image"/>
             <h4>{name}</h4>
-            <p>Time Required: <span className='time'>{time} mins</span></p>
+            <p>Time Required: <span className='time'>{time}m</span></p>
             <button className='btn'>
                 <p>Add to List</p>
             </button>

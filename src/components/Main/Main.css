@@ -4,7 +4,7 @@
     background-color: azure
 }
 
-.title-info {
+.title-part {
     text-align: center;
 }
 
@@ -26,6 +26,4 @@
 .sidebar-container {
     background-color: white;
     padding: 20px;
-    position: sticky;
-    top: 0;
 }
