@@ -1,11 +1,12 @@
 import './App.css';
+import Blog from './components/Blog/Blog';
 import Main from './components/Main/Main';
-import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
     <div>
       <Main></Main>
+      <Blog></Blog>
     </div>
   );
 }
