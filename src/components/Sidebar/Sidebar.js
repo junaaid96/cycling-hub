@@ -26,7 +26,7 @@ const Sidebar = () => {
                 </div>
             </div>
             <h4>Add A Break</h4>
-            <div className='break'>
+            <div className='common-style'>
                 <div>
                     <p className='break-time'>5m</p>
                 </div>
@@ -42,6 +42,15 @@ const Sidebar = () => {
                 <div>
                     <p className='break-time'>30m</p>
                 </div>
+            </div>
+            <h4>Activity Details</h4>
+            <div className='common-style'>
+                <h4>Cycling Time</h4>
+                <p>0</p>
+            </div>
+            <div className='common-style'>
+                <h4>Break Time</h4>
+                <p>0</p>
             </div>
         </div>
     );
