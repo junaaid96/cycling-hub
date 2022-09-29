@@ -7,8 +7,10 @@ const Activity = ({activity}) => {
         <div className='activity'>
             <img src={image} alt="activity-image"/>
             <h4>{name}</h4>
-            <p>{time}</p>
-            <button>Add to List</button>
+            <p>Time Required: <span className='time'>{time} mins</span></p>
+            <button className='btn'>
+                <p>Add to List</p>
+            </button>
         </div>
     );
 };

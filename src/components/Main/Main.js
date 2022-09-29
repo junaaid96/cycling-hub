@@ -12,8 +12,11 @@ const Main = () => {
 
     return (
         <div className="main-container">
-            <div className='title'>
+            <div className='title-info'>
+                <div className='title'>
+                <img src="logo.png" alt="logo" width={100}/>
                 <h1>Cycling Hub</h1>
+                </div>
                 <h3>Select any activity</h3>
                 <div className="activities-container">
                     {activities.map((activity) => (

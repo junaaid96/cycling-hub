@@ -4,8 +4,16 @@
     background-color: azure
 }
 
-.title {
+.title-info {
     text-align: center;
+}
+
+.title{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
 
 .activities-container {
@@ -18,4 +26,6 @@
 .sidebar-container {
     background-color: white;
     padding: 20px;
+    position: sticky;
+    top: 0;
 }
