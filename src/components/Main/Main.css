@@ -1,14 +1,14 @@
-.main-container{
+.main-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    background-color: azure
+    background-color: azure;
 }
 
 .title-part {
     text-align: center;
 }
 
-.title{
+.title {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -26,4 +26,11 @@
 .sidebar-container {
     background-color: white;
     padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .main-container {
+        display: block;
+        background-color: azure;
+    }
 }

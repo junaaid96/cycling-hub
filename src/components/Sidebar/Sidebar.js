@@ -31,7 +31,7 @@ const Sidebar = ({ list }) => {
                     <p>Weight</p>
                 </div>
                 <div>
-                    <p><span className='text'>6.10</span>"</p>
+                    <p><span className='text'>5.10</span>"</p>
                     <p>Height</p>
                 </div>
                 <div>
@@ -68,17 +68,15 @@ const Sidebar = ({ list }) => {
             </div>
 
             <button onClick={notify} className='completed-btn'>
-                <p>Completed</p>
+                <p>Complete</p>
                 <ToastContainer
-                    position="top-center"
-                    autoClose={5000}
-                    hideProgressBar={false}
+                    position="bottom-right"
+                    autoClose={false}
                     newestOnTop={false}
                     closeOnClick
                     rtl={false}
                     pauseOnFocusLoss
                     draggable
-                    pauseOnHover
                 />
             </button>
         </div>
